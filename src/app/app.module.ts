@@ -20,13 +20,15 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     TimelineComponent,
     ErrorComponent,
-    MenuComponent,
-    FooterComponent,
+   
+    
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FooterComponent,
+    MenuComponent,
     FormsModule
     // WelcomeComponent,
     // ListtodosComponent

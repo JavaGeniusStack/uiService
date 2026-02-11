@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgIf } from '@angular/common';
+// import { NgIf } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
@@ -7,7 +7,8 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
   standalone: true,
   templateUrl: './welcome.component.html',
   styleUrl: './welcome.component.css',
-  imports: [NgIf, RouterLink]
+  // imports: [NgIf, RouterLink]
+  imports: [RouterLink]
 })
 export class WelcomeComponent implements OnInit {
 
