@@ -1,16 +1,15 @@
-<p style="background-color: red; color: white; padding: 5px;" *ngIf="inValidLogin">
+<div class="alert alert-danger" *ngIf="inValidLogin">
  {{errorMessage}}
-</p>
+</div>
 
 <!-- UserName: <input type="text" name="username" id="username" value={{username}}> -->
- <div>
+ <div class="container">
+  <h2>Login Here</h2>
 UserName: <input type="text" name="username" id="username" [(ngModel)]="username">
-Password: <input type="password" name="password" id="password" [(ngModel)]="password">
- </div>
 
-<div>
-  <!-- <p>Username: {{username}}</p> -->
-  <!-- Welcome {{username}} --- (this is called interpolation) -->
-<button type="submit" (click)="onLogin()">Login</button>
-<button type="submit" (click)="onReset()">Reset</button>
+Password: <input type="password" name="password" id="password" [(ngModel)]="password">
+<br><br>
+<button class="btn btn-success" (click)="onLogin()">Login</button>
+
+<button class="btn btn-secondary" (click)="onReset()">Reset</button>
 </div>
