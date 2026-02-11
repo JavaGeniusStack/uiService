@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { NgIf, NgFor, UpperCasePipe, DatePipe } from '@angular/common'; 
+import {  NgFor, UpperCasePipe, DatePipe } from '@angular/common'; 
+// import { NgIf, NgFor, UpperCasePipe, DatePipe } from '@angular/common'; 
 @Component({
   selector: 'app-listtodos',
   standalone: true,
   templateUrl: './listtodos.component.html',
   styleUrl: './listtodos.component.css',
-  imports: [NgIf, NgFor, UpperCasePipe, DatePipe]
+  // imports: [NgIf, NgFor, UpperCasePipe, DatePipe]
+  imports: [NgFor, UpperCasePipe, DatePipe]
 })
 
 export class ListtodosComponent implements OnInit {
