@@ -8,19 +8,29 @@ import { CalenderComponent } from './calender/calender.component';
 import { LoginComponent } from './login/login.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { FormsModule } from '@angular/forms';
+import { ErrorComponent } from './error/error.component';
+import { ListtodosComponent } from './listtodos/listtodos.component';
+import { MenuComponent } from './menu/menu.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent,
     CalenderComponent,
     LoginComponent,
-    TimelineComponent   
+    TimelineComponent,
+    ErrorComponent,
+    MenuComponent,
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
+    // WelcomeComponent,
+    // ListtodosComponent
+    //they are added to routing module as standalone component, so no need to add here
   ],
   providers: [],
   bootstrap: [AppComponent]
